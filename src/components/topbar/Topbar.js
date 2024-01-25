@@ -3,13 +3,13 @@ import { IoMdChatboxes, IoMdNotifications, IoMdPerson, IoMdSearch } from "react-
 
 const Topbar = () => {
   return (
-    <div className="topbarCOntainer">
+    <div className="topbarContainer">
         <div className="topbarLeft">
             <sapn className="logo">Fackbook</sapn>
         </div>
         <div className="topbarCenter">
             <div className="searchbar">
-                <IoMdSearch />
+                <IoMdSearch  className="searchIcon"/>
                 <input placeholder="search for friends posts or videos" className="searchInput" />
             </div>
         </div>
@@ -32,9 +32,10 @@ const Topbar = () => {
                     <span className="topbarIconBadge">1</span>
                 </div>
             </div>
+            <img src="\assets\profilpic.jpg" alt="profilepic" className="topbarImg" />
         </div>
     </div>
   )
-}
+} 
 
 export default Topbar  
